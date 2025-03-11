@@ -1,0 +1,20 @@
+# 
+
+# to create a python environment
+conda create -n <environment_name> python==<python_version>
+---> example : conda create -n py311 python==3.11 
+
+# to activate the environment
+conda activate <environment_name>
+---> example : conda activate py311
+
+# install the required packages
+# initial setup
+pip install <pkg_name>
+conda install <pkg_name>
+---> example : pip install pandas numpy seaborn jupyter openpyxl scikit-learn
+# when the requirements file is available
+---> example : pip install -r requirements.txt
+
+# after adding the dependencies
+---> pip freeze > requirements.txt
