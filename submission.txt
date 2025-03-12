@@ -48,12 +48,12 @@ The range for skewness considered is
      < -1 and > 1 - highly skewed
 
 - There were outliers in ANNUAL_REVENUE target variable, that represented a long 
-disconnected tail. the rows where ANNUAL >2.5e6 are not considered for analysis.
-Since there are no mean if the values are genuine and are not due to any errors.
+disconnected tail. the rows where ANNUAL_REVENUE >2.5e6 are not considered for analysis.
+Since there are no reference to validate if the values are genuine and are not due to any errors.
 
 - The data is imputed with KNN imputer
 
-- The data is scaled with standard scaler
+- The data is scaled - standardized with standard scaler
 
 ======================================================================================================================
 
@@ -350,7 +350,7 @@ plt.xlabel("Revenue")
 plt.title("Overlay plot of the potential and current")
 plt.legend(title="Datasets")
 plt.show()
-# The plot shows that the predictions are similar to the actual ANNUAL__REVENUE distribution
+# The plot shows that the predictions are similar to the actual ANNUAL_REVENUE distribution
 # There is possiblity the model could be underfitting, but that could be a result 
 # of smaller dataset size.
 
